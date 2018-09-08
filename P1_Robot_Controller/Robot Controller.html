@@ -12292,8 +12292,8 @@ OK
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>问题1:第一个env_data是引用了全局变量，第二个env_data因为和参数同名，所以在作用域上覆盖了全局的env_data。</p>
-<p>问题2:会改变env_data_的值，因为列表是可变类型，当把env_data作为参数传入is_move_valid后，实际上env_data和env_data_都引用同一块内存区域，所以会改变env_data_的值。</p>
+<p>问题1:第一个<code>env_data</code>是引用了全局变量，第二个<code>env_data</code>因为和参数同名，所以在作用域上覆盖了全局的<code>env_data</code>。</p>
+<p>问题2:会改变<code>env_data_</code>的值，因为列表是可变类型，当把<code>env_data</code>作为参数传入is_move_valid后，实际上<code>env_data</code>和<code>env_data_</code>都引用同一块内存区域，所以会改变<code>env_data_</code>的值。</p>
 
 </div>
 </div>
